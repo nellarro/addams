@@ -1,7 +1,9 @@
 @import 'utility'
 
 $base-text-size: 16px
-$base-font-family: sans-serif
+$base-font-family: 'Creepster', cursive
+$module-font: 'Meddon', cursive
+$titular-color: #EAEAEA
 
 html
   text-size-adjust: 100%
@@ -10,6 +12,7 @@ body
   @include font-smoothing(on)
   margin: 0
   font: $base-text-size / 1 $base-font-family
+  background-color: black
 
 .card
   border: 2px solid #0d0d0d
@@ -17,10 +20,9 @@ body
   height: 200px
   margin: 10px
   text-align: center
-  line-height: 100px
 
   &.up
-    background-color: white
+    background-image: white
     color: purple
 
   &.down
@@ -44,3 +46,10 @@ button
   font-size: 30px
   background-color: #fff
   text-align: center
+
+.Title
+  h1
+    color: $titular-color
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7)
+    text-align: center
+    font-size: 4.25em
