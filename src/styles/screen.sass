@@ -1,0 +1,45 @@
+@import 'utility'
+
+$base-text-size: 16px
+$base-font-family: sans-serif
+
+html
+  text-size-adjust: 100%
+
+body
+  @include font-smoothing(on)
+  margin: 0
+  font: $base-text-size / 1 $base-font-family
+
+.card
+  border: 2px solid #0d0d0d
+    radius: 10px
+  height: 200px
+  margin: 10px
+  text-align: center
+  line-height: 100px
+
+  &.up
+    background-color: white
+    color: purple
+
+  &.down
+    background-color: purple
+
+main
+  display: flex
+  flex:
+    direction: row
+    wrap: wrap
+  justify-content: space-around
+  margin-left: 10%
+  margin-right: 10%
+
+button
+  font-family: $base-font-family
+  width: 200px
+  border: 2px solid #0d0d0d
+    radius: 10px
+  font-size: 30px
+  background-color: #fff
+  text-align: center
