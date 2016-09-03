@@ -1,4 +1,4 @@
-{ "name": "Addams Memory",
+{ 
   "private": true,
   "scripts": {
     "build": "webpack",
