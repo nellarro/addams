@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import '../styles/screen.sass'
 import Card from '../components/Card.js'
+import '../theme.mp3'
 
-const SHOW_CARD = 2000
+const SHOW_CARD = 1400
 
 class App extends Component {
 
