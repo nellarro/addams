@@ -89,6 +89,7 @@ class App extends Component {
         <h1>Addams Family Memory</h1>
         <main>
           {cards}
+          <audio src='src/theme.mp3' autoPlay='true' />
         </main>
       </div>
     } else {
