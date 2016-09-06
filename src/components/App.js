@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import '../styles/screen.sass'
 import Card from '../components/Card.js'
+import Win from '../components/Win.js'
 import '../theme.mp3'
 
 const SHOW_CARD = 1400
@@ -91,9 +92,7 @@ class App extends Component {
         </main>
       </div>
     } else {
-      return <div>
-        <h1> YOU WIN!!! </h1>
-      </div>
+      return <Win />
     }
   }
 }

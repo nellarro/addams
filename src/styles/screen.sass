@@ -4,6 +4,7 @@ $base-text-size: 16px
 $base-font-family: 'Creepster', cursive
 $module-font: 'Meddon', cursive
 $titular-color: #EAEAEA
+$blood: #8A0303
 
 html
   text-size-adjust: 100%
@@ -12,7 +13,7 @@ body
   @include font-smoothing(on)
   margin: 0
   font: $base-text-size / 1 $base-font-family
-  background-color: black
+  background-color: rgba(10,9,8,1.5)
 
 .card
   border: 2px solid #0d0d0d
@@ -22,12 +23,9 @@ body
   text-align: center
 
   &.up
-    background-image: white
-    color: purple
+    width: 165px
 
   &.down
-    background-color: purple
-    color: transparent
 
 main
   display: flex
@@ -53,3 +51,15 @@ button
     text-shadow: 0px 0px 6px rgba(255,255,255,0.7)
     text-align: center
     font-size: 4.25em
+
+.Win
+  font-family: $module-font
+  text-shadow: 0px 0px 6px rgba(255,255,255,0.7)
+  text-align: center
+  font-size: 4.25em
+
+  h1
+    color: $titular-color
+
+  h4
+    color: $blood
